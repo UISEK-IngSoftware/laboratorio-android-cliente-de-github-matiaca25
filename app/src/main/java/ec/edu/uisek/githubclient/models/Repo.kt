@@ -1,5 +1,7 @@
 package ec.edu.uisek.githubclient.models
 
+import android.R
+
 data class Repo (
     val id: Long,
     val name: String,
@@ -8,3 +10,9 @@ data class Repo (
     val owner: RepoOwner
 )
 
+data class RepoRequest(
+    val name: String,
+    val description: String,
+
+
+    )
