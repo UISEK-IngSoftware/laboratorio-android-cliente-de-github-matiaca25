@@ -1,18 +1,13 @@
 package ec.edu.uisek.githubclient.models
 
-import android.R
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-data class Repo (
+@Parcelize
+data class Repo(
     val id: Long,
     val name: String,
-    val description: String,
+    val description: String?,
     val language: String?,
     val owner: RepoOwner
-)
-
-data class RepoRequest(
-    val name: String,
-    val description: String,
-
-
-    )
+) : Parcelable
